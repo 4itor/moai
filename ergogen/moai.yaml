@@ -1,0 +1,404 @@
+meta:
+  engine: 4.0.0
+  autor: 4itor
+  version: 0.0.2
+
+units:
+  # Main layout
+  angle: -9
+  Distance: 3.25U
+  Fillet: 2
+  # constants
+  S: .525U # Default Spacer
+  WS: .70U # Wide Spacer (1.25S)
+  TOP: .3U # Top Spacer
+  MX: 14 # Size of the MX plate socket
+
+points:
+  zones:
+    matrix:
+      #-- Displacement for KiCad Exports
+      anchor:
+        shift: [125, -125]
+      rotate: angle
+      mirror: &mirror
+        ref: matrix_inner_bottom
+        shift: [0, -U]
+        distance: Distance
+      columns:
+        pinky:
+          key:
+            col_net: P1
+            mirror.col_net: P21
+        ring:
+          key:
+            stagger: 8
+            col_net: P0
+            mirror.col_net: P20
+        middle:
+          key:
+            stagger: 4
+            col_net: P4
+            mirror.col_net: P19
+        index:
+          key:
+            stagger: -4
+            col_net: P5
+            mirror.col_net: P18
+        inner:
+          key:
+            stagger: -4
+            col_net: P6
+            mirror.col_net: P15
+      rows:
+        bottom:
+          row_net: P8
+        home:
+          row_net: P10
+        top:
+          row_net: P16
+    thumb:
+      mirror: *mirror
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [-.5U, -U]
+        rotate: 0
+      columns:
+        outer:
+          key:
+            width: 1.25cx
+            row_net: P9
+            col_net: P5
+            mirror.col_net: P18
+            rotate: 180 # Inverted switch
+        inner:
+          key:
+            shift: [.25cx, 0]
+            width: 1.25cx
+            row_net: P9
+            col_net: P6
+            mirror.col_net: P15
+            rotate: 180 # Inverted switch
+outlines:
+  keys:
+    - what: rectangle
+      where: -/thumb/
+      bound: false
+      size: [cx, cx]
+    - what: rectangle
+      where: /thumb/
+      bound: false
+      size: [1.25cx, cx]
+
+  switch:
+    - what: rectangle
+      where: true
+      bound: false
+      size: [MX, MX]
+
+  board:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: matrix_pinky_top
+          shift: [-S, +S+TOP]
+        - ref: matrix_pinky_bottom
+          shift: [-S, -S]
+        - ref: thumb_outer
+          shift: [WS, S]
+        - ref: thumb_inner
+          shift: [-WS, S]
+        # lower dent
+        - aggregate.parts:
+            - thumb_inner
+            - mirror_thumb_inner
+          shift: [-3, -9]
+        - shift: [6,0]
+        - ref: mirror_thumb_inner
+          shift: [-WS, S]
+        - ref: mirror_thumb_outer
+          shift: [WS, S]
+        - ref: mirror_matrix_pinky_bottom
+          shift: [-S, -S]
+        - ref: mirror_matrix_pinky_top
+          shift: [-S, +S+TOP]
+        # upper dent (averagind both top corners)
+        - aggregate.parts:
+          - ref: matrix_pinky_top
+            shift: [-S, +S+TOP]
+          - ref: mirror_matrix_pinky_top
+            shift: [-S, +S+TOP]
+          shift: [+12, 0]
+        - shift: [-3, -5]
+        - shift: [-18, 0]
+        - shift: [-3, 5]
+      fillet: Fillet
+
+  mcu_slot:
+    - what: rectangle
+      size: [20, 40]
+      corner: 1
+      where:
+          aggregate.parts:
+            - ref: matrix_inner_top
+            - ref: mirror_matrix_inner_top
+          shift: [0, 5]
+
+  diode_slots:
+    - what: rectangle
+      size: [MX+5,MX-1.5]
+      where: -/thumb/
+      adjust:
+        shift: [2.5,-1.5]
+    - what: rectangle
+      size: [MX,MX+5]
+      where: /thumb_inner/
+      adjust:
+        shift: [11,-2.5]
+
+  matrix_hole:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: matrix_pinky_top
+          shift: [0,5]
+        - ref: matrix_pinky_bottom
+        - ref: matrix_inner_bottom
+          shift: [5,-5]
+        - ref: mirror_matrix_inner_bottom
+          shift: [5,-5]
+        - ref: mirror_matrix_pinky_bottom
+        - ref: mirror_matrix_pinky_top
+          shift: [0,5]
+        - ref: mirror_matrix_inner_top
+          shift: [5,7]
+        - ref: matrix_inner_top
+          shift: [5,7]
+
+  #batt_slot:
+  #  - what: rectangle
+  #    size: [30, 33] # LP302730
+  #    #size: [32, 25] # LP322431
+  #    #size: [32, 22] # LP352131
+  #    corner: 1
+  #    where:
+  #        aggregate.parts:
+  #          - ref: matrix_inner_top
+  #          - ref: mirror_matrix_inner_top
+  #        shift: [0, -33]
+
+  plate:
+    - name: board
+    - operation: subtract
+      name: switch
+
+  middle_layer:
+    - name: board
+    - operation: subtract
+      name: switch
+    - operation: subtract
+      name: mcu_slot
+    - operation: subtract
+      name: diode_slots
+    - operation: subtract
+      name: matrix_hole
+    #- operation: subtract
+    #  name: batt_slot
+
+  feet:
+    - what: circle
+      radius: 4
+      where:
+        - ref: matrix_pinky_top
+          shift: [-S+4.5, +S+TOP-4]
+    - what: circle
+      radius: 4
+      where:
+        - ref: mirror_matrix_pinky_top
+          shift: [-S+4.5, +S+TOP-4]
+    - what: circle
+      radius: 4
+      where:
+        - ref: matrix_pinky_bottom
+          shift: [-S+4.5, -S+3.5]
+    - what: circle
+      radius: 4
+      where:
+        - ref: mirror_matrix_pinky_bottom
+          shift: [-S+4.5, -S+3.5]
+    - what: circle
+      radius: 4
+      where:
+        - ref: thumb_outer
+          shift: [WS-.5, S-4.5]
+    - what: circle
+      radius: 4
+      where:
+        - ref: mirror_thumb_outer
+          shift: [WS-.5, S-4.5]
+    - what: circle
+      radius: 4
+      where:
+        - ref: thumb_inner
+          shift: [-WS+2.5, S-4.5]
+    - what: circle
+      radius: 4
+      where:
+        - ref: mirror_thumb_inner
+          shift: [-WS+2.5, S-4.5]
+    - what: circle
+      radius: 4
+      where:
+        - aggregate.parts:
+          - ref: matrix_pinky_top
+            shift: [-S, +S+TOP]
+          - ref: mirror_matrix_pinky_top
+            shift: [-S, +S+TOP]
+          shift: [-14.5, -4.5]
+    - what: circle
+      radius: 4
+      where:
+        - aggregate.parts:
+          - ref: matrix_pinky_top
+            shift: [-S, +S+TOP]
+          - ref: mirror_matrix_pinky_top
+            shift: [-S, +S+TOP]
+          shift: [+14.5, -4.5]
+
+  demo_outline:
+    - name: board
+    - operation: stack
+      name: keys
+    - operation: stack
+      name: feet
+
+pcbs:
+  moai-plate:
+    outlines:
+      main:
+        outline: plate
+        layer: Edge.Cuts
+
+  moai:
+    outlines:
+      main:
+        outline: board
+        layer: Edge.Cuts
+      silkscreen:
+        outline: feet
+        layer: B.SilkS
+
+    footprints:
+      switch:
+        what: mx
+        where: true
+        params:
+          from: "{{col_net}}"
+          to: "{{colrow}}"
+          keycaps: true
+      diodes_right:
+        what: diode
+        where: -/mirror|thumb/
+        adjust:
+          shift: [9, -1.2]
+          rotate: -90
+        params:
+          from: "{{row_net}}"
+          to: "{{colrow}}"
+      diodes_left:
+        what: diode
+        where:
+          /mirror_matrix/
+        adjust:
+          shift: [9, -1.2]
+          rotate: 90
+        params:
+          from: "{{row_net}}"
+          to: "{{colrow}}"
+      diode_thumb_a:
+        what: diode
+        where: /^thumb_outer/
+        adjust:
+          shift: [-9, -3]
+          rotate: -90
+        params:
+          from: "{{row_net}}"
+          to: "{{colrow}}"
+      diode_thumb_b:
+        what: diode
+        where: /^thumb_inner/
+        adjust:
+          shift: [9, -3]
+          rotate: -90
+        params:
+          from: "{{row_net}}"
+          to: "{{colrow}}"
+      diode_thumb_c:
+        what: diode
+        where: /^mirror_thumb_inner/
+        adjust:
+          shift: [9, -3]
+          rotate: 90
+        params:
+          from: "{{row_net}}"
+          to: "{{colrow}}"
+      diode_thumb_d:
+        what: diode
+        where: /^mirror_thumb_outer/
+        adjust:
+          shift: [-9, -3]
+          rotate: 90
+        params:
+          from: "{{row_net}}"
+          to: "{{colrow}}"
+      mcu:
+        what: promicro
+        where:
+          aggregate.parts:
+            - ref: matrix_inner_top
+            - ref: mirror_matrix_inner_top
+          shift: [0, 2]
+          rotate: -90
+        params:
+          orientation: up
+      via_toprow:
+        what: via
+        where:
+          aggregate.parts:
+            - ref: matrix_inner_top
+            - ref: mirror_matrix_inner_top
+          shift: [0, -6.5]
+        params:
+          net: P16
+      via_homerow:
+        what: via
+        where:
+          aggregate.parts:
+            - ref: matrix_inner_home
+            - ref: mirror_matrix_inner_home
+          shift: [0, -6.5]
+        params:
+          net: P10
+      via_bottomrow:
+        what: via
+        where:
+          aggregate.parts:
+            - ref: matrix_inner_bottom
+            - ref: mirror_matrix_inner_bottom
+          shift: [0, -6.5]
+        params:
+          net: P8
+      via_tumbrow:
+        what: via
+        where:
+          ref.aggregate.parts: [thumb_inner, mirror_thumb_inner]
+          shift: [0, 8]
+        params:
+          net: P9
+
+cases:
+  middle_layer_stl:
+    - name: middle_layer
+      extrude: 3.1
+      #-- Displacement for STL exports
+      shift: [-207.5,135,0]
