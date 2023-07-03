@@ -2,6 +2,8 @@
 
 ![Moai Logo](images/photo1.png)
 
+A 34 key low(ish) profile keyboard with MX switches.
+
 ## About moai
 
 ![Moai Logo](images/moai_vector.png)
@@ -19,3 +21,8 @@ Source: <https://en.wikipedia.org/wiki/Moai_(social_support_groups)>
 It was designed using Ergogen and Kicad.
 
 Original procedural design on [Ergogen] Folder and Kicad+Gerbers on [Build Files]
+
+
+## How to Build
+
+(Under construction)
