@@ -24,7 +24,7 @@ Source: <https://en.wikipedia.org/wiki/Moai_(social_support_groups)>
 
 It was designed using Ergogen and Kicad.
 
-Original procedural design on [Ergogen](ergogen/) Folder and Kicad+Gerbers on [Build Files](build_files/)
+Original procedural design on [Ergogen](ergogen/moai.yaml) Folder and Kicad+Gerbers on [Build Files](build_files/)
 
 
 ## How to Build
