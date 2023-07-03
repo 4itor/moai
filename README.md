@@ -14,7 +14,7 @@ Source: <https://en.wikipedia.org/wiki/Moai_(social_support_groups)>
 
 ## Design
 
-![Moai PCB](images/moai_pcb.png)
+![Moai PCB](images/kicad_pcb.png)
 
 It was designed using Ergogen and Kicad.
 
