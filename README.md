@@ -8,7 +8,7 @@ A 34 key low(ish) profile keyboard with MX switches.
 
 ![Moai Logo](images/moai_vector.png)
 
-The moai logo is an ambigram on the romanized japanese term "moai"
+The moai logo is an ambigram on the romanized japanese term "moai".
 
 Moais (模合, Mo-ai) are social support groups that form in order to provide varying support from social, financial, health, or spiritual interests.
 
