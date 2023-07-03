@@ -1,8 +1,10 @@
-# Moai Keyboard
+# moai Keyboard
+
+![Moai Logo](images/photo1.png)
+
+## About moai
 
 ![Moai Logo](images/moai_vector.png)
-
-## About
 
 The moai logo is an ambigram on the romanized japanese term "moai"
 
@@ -11,6 +13,8 @@ Moais (模合, Mo-ai) are social support groups that form in order to provide va
 Source: <https://en.wikipedia.org/wiki/Moai_(social_support_groups)>
 
 ## Design
+
+![Moai PCB](images/moai_pcb.png)
 
 It was designed using Ergogen and Kicad.
 
