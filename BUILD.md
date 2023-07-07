@@ -7,17 +7,17 @@ _(Under construction)_
 * 1x Moai PCB (see Kicad file)
 * 1x Moai Plate (see Kicad file)
 * 1x Wood middle layer
-    * Laser cut from maple 3.3mm width panel, see `middle_later.dxf` on `build_files/` folder.
-    * Optionally 3mm acrylic can be used instead, but the results are not as good (it can move a bit, and maybe a drop of glue is needed to keep it in place)
+  * Laser-cut from a hard wood (3.3mm width) panel, see `middle_later.dxf` on `build_files/` folder for the design.
+  * Optionally 3mm laser-cut acrylic can be used instead, but the results are not as good (it can move a bit, and maybe a drop of glue is needed to keep it in place)
 * 1x Low profile microcontroller
-    * 0xCB Helios, Frood RP2040, Elite-Pi, Elite-C LowProfile, etc. It should be able to be soldered flat on top of the pcb with components up (so no components on the bottom) and height has to be approx 3.2mm or below.
-    * I tried 0xCB, Frood and Elite-Pi and those three worked well.
+  * 0xCB Helios, Frood RP2040, Elite-Pi, Elite-C LowProfile, etc. It should be able to be soldered flat on top of the pcb with components up (so no components on the bottom) and height has to be about 3mm.
+  * I tried 0xCB, Frood and Elite-Pi and those three worked well.
 * 34x 1N4148 Diodes
-    * Could be either through hole or SMD as the PCB supports both
+* Could be either through hole or SMD as the PCB supports both
 * 34x MX compatible switches
 * 34x Keycaps
-    * 4x 1.25U (Preferably R1 if not flat profile)
-    * 30x 1U
+  * 4x 1.25U (Preferably R1 if not flat profile)
+  * 30x 1U
 
 ## 1. Preparing PCB and Plate
 
@@ -37,7 +37,7 @@ If using trough hole diodes, use a flush cutter to cut the excess leads.
 
 ## 4. Soldering the switches
 
-> **Optional:** Use also a flush cutter to cut the excess heigh of the pins. I tried and feels amazing once everything is soldered, buuuut it can potentially ruin 34 switches; not recommended for the faint of heart
+> **Optional:** Use also a flush cutter to cut the excess heigh of the pins. I tried and feels amazing once everything is soldered, buuuut it can potentially ruin 34 switches; not recommended for the faint of heart.
 ...
 
 ## 5. Keycaps
