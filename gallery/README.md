@@ -1,13 +1,29 @@
 # Gallery
 
-![Moai](photo1.png) Moai
+Moai
+![Moai](photo1.png)
 
-![Detail](photo2.png) Detail
+---
 
-![Front](photo3.png) Front
+Detail
+![Detail](photo2.png)
 
-![Back](photo4.png) Back
+---
 
-![Couple](photo5.png) Work and home drivers.
+Front
+![Front](photo3.png)
 
-![Controller](photo6.png) Detail of the controller positioning.
+---
+
+Back
+![Back](photo4.png)
+
+---
+
+Work and home drivers.
+![Couple](photo5.png)
+
+---
+
+Detail of the controller positioning.
+![Controller](photo6.png)
