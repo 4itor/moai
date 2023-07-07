@@ -27,3 +27,8 @@ Work and home drivers.
 
 Detail of the controller positioning.
 ![Controller](photo6.png)
+
+---
+
+Detail of the flush-clipped switch pins after soldering.
+![ClippedSwitch](photo7.png)

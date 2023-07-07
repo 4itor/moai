@@ -37,8 +37,7 @@ If using trough hole diodes, use a flush cutter to cut the excess leads.
 
 ## 4. Soldering the switches
 
-> **Optional:** Use also a flush cutter to cut the excess heigh of the pins. I tried and feels amazing once everything is soldered, buuuut it can potentially ruin 34 switches; not recommended for the faint of heart.
-...
+> **Optional:** Use also a flush cutter to cut the excess heigh of the pins. I tried and feels amazing once everything is soldered, buuuut it can potentially ruin 34 switches; not recommended for the faint of heart. (You can see the results of this process in the last picture of gallery)
 
 ## 5. Keycaps
 
