@@ -8,7 +8,7 @@ A 34 key low(ish) profile keyboard with MX switches.
 
 The keyboard is caseless, using just the plate and the pcb, with a maple woodcut (3.3mm height) between both. No screws, the soldered switches keep everything in place.
 
-The wood gives enough stability and it's quite sturdy compared to other caseless builds I've done before
+The wood gives enough stability and it's quite sturdy compared to other caseless builds I've done before that used screws.
 
 ## About moai
 
