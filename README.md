@@ -12,7 +12,7 @@ The wood gives enough stability and it's quite sturdy compared to other caseless
 
 The texture on the plate is created poking holes on the Cu layer so the soldermask gets 'bumpy'; tried just this once and results where better than expected; (As the plate is simmetrycal I created two designs on each side, but only used the textured one for now)
 
-> **Word of advice** : The distance between each pair of thumb keys is tenths of a millimeter less than the standard for 1.25U keys, this is intentional. I have found no incompatibilities in any keycap profiles trown at it (Cherry, MDA/XVX, SDA, MT3) but your milleage may vary.
+> **Word of advice** : The distance between each pair of thumb keys is tenths of a millimeter less than the standard for 1.25U keys, this is intentional. I have found no incompatibilities in any keycap profiles trown at it (Cherry, MDA/XVX, XDA, SDA, MT3, etc) from several vendors, but your milleage may vary.
 
 See more pictures in the [gallery](gallery/README.md).
 
@@ -36,8 +36,8 @@ Source: <https://en.wikipedia.org/wiki/Moai_(social_support_groups)>
 
 It was designed using Ergogen and Kicad.
 
-Original procedural design on [Ergogen](ergogen/moai.yaml) Folder and Kicad+Gerbers on [Build Files](build_files/)
+Original procedural design on [Ergogen](ergogen/moai.yaml) folder and Kicad+Gerbers on [Build Files](build_files/)
 
-## How to Build
+## Build
 
-(Under construction)
+See [build notes](BUILD.md)
