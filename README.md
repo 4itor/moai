@@ -1,6 +1,6 @@
 # moai Keyboard
 
-![Moai Logo](images/photo1.png)
+![Moai Logo](gallery/photo1.png)
 
 A 34 key low(ish) profile keyboard with MX switches.
 
