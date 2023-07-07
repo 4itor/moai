@@ -7,13 +7,13 @@ _(Under construction)_
 * 1x Moai PCB (see Kicad file)
 * 1x Moai Plate (see Kicad file)
 * 1x Wood middle layer
-  * Laser-cut from a hard wood (3.3mm width) panel, see `middle_later.dxf` on `build_files/` folder for the design.
-  * Optionally 3mm laser-cut acrylic can be used instead, but the results are not as good (it can move a bit, and maybe a drop of glue is needed to keep it in place)
+  * Laser-cut from a 3.3mm width panel, see `middle_later.dxf` on `build_files/` folder for the design.
+  * Optionally 3mm laser-cut acrylic can be used instead, but the results are not as good (it can move a bit defeating its purpose, and maybe a drop of glue is needed to keep it in place)
 * 1x Low profile microcontroller
   * 0xCB Helios, Frood RP2040, Elite-Pi, Elite-C LowProfile, etc. It should be able to be soldered flat on top of the pcb with components up (so no components on the bottom) and height has to be about 3mm.
   * I tried 0xCB, Frood and Elite-Pi and those three worked well.
 * 34x 1N4148 Diodes
-* Could be either through hole or SMD as the PCB supports both
+  * Could be either through hole or SMD as the PCB supports both
 * 34x MX compatible switches
 * 34x Keycaps
   * 30x 1U Alphas
