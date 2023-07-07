@@ -1,8 +1,14 @@
 # moai Keyboard
 
-![Moai Logo](gallery/photo1.png)
+![Moai](gallery/photo1.png)
 
 A 34 key low(ish) profile keyboard with MX switches.
+
+![Moai Detail](gallery/photo2.png)
+
+The keyboard is caseless, using just the plate and the pcb, with a maple woodcut (3.3mm height) between both. No screws, the soldered switches keep everything in place.
+
+The wood gives enough stability and it's quite sturdy compared to other caseless builds I've done before
 
 ## About moai
 
