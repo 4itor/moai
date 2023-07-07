@@ -16,8 +16,8 @@ _(Under construction)_
 * Could be either through hole or SMD as the PCB supports both
 * 34x MX compatible switches
 * 34x Keycaps
-  * 4x 1.25U Modifiers (Preferably R1 if not flat profile)
   * 30x 1U Alphas
+  * 4x 1.25U Modifiers (Preferably R1 if not flat profile)
 
 ## 1. Preparing PCB and Plate
 
