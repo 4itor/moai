@@ -10,7 +10,7 @@ The keyboard is caseless, using just the plate and the pcb, with a maple woodcut
 
 The wood gives enough stability and it's quite sturdy compared to other caseless builds I've done before (even the ones that used screws).
 
-The texture on top of the plate is created poking holes on the `Cu` layer below; tried just this once and results where better than expected; As the plate is simmetrical I created two designs on each side, but only used the textured one for now.
+The texture on top of the plate is created poking holes on the `Cu` layer below; tried just this once and results where better than expected; As the plate is simmetrical I created two designs (one on each side), but only used the textured one for now.
 
 > **Word of advice** : The distance between each pair of thumb keys is tenths of a millimeter less than the standard for 1.25U keys, this is intentional. I have found no incompatibilities in any keycap profiles thrown at it (Cherry, MDA/XVX, XDA, SDA, MT3, etc) from several vendors, but your milleage may vary.
 
