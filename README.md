@@ -20,7 +20,7 @@ See more pictures in the [Gallery](gallery/README.md).
 
 ![Moai Logo](images/moai_vector.png)
 
-The moai logo is an ambigram on the romanized j apanese term "moai".
+The moai logo is an [ambigram](https://en.wikipedia.org/wiki/Ambigram) on the romanized japanese term `moai`.
 
 Moais (模合, Mo-ai) are social support groups that form in order to provide varying support from social, financial, health, or spiritual interests.
 
