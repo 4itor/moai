@@ -22,6 +22,7 @@ _(Under construction)_
 ## 1. Preparing PCB and Plate
 
 Using Acrylic ink pen, paint the outer border of the plate and the PCB.
+
 ...
 
 ## 2. Soldering the Diodes
@@ -33,12 +34,17 @@ Keep in mind that the PCB is bare from below, so maybe better to solder the diod
 Please also take special care in the orientation of the soldered diodes, the 4 thumb keys have them reversed compared to the rest of the keys.
 
 If using trough hole diodes, use a flush cutter to cut the excess leads.
+
 ...
 
 ## 4. Soldering the switches
 
+...
+
 > **Optional:** Use also a flush cutter to cut the excess heigh of the pins. I tried and feels amazing once everything is soldered, buuuut it can potentially ruin 34 switches; not recommended for the faint of heart. (You can see the results of this process in the last picture of gallery)
 
 ## 5. Keycaps
+
+...
 
 > **Word of advice** : The distance between each pair of thumb keys is tenths of a millimeter less than the standard for 1.25U keys, this is intentional. I have found no incompatibilities in any keycap profiles thrown at it (Cherry, MDA/XVX, XDA, SDA, MT3, etc) from several vendors, but your milleage may vary.
