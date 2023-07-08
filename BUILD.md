@@ -19,6 +19,17 @@ _(Under construction)_
   * 30x 1U Alphas
   * 4x 1.25U Modifiers (Preferably R1 if not flat profile)
 
+## Required Tools
+
+
+* Soldering Iron + Solder
+  * Optionally flux if soldering SMD diodes.
+  * Solder pad and some fan and ventilation is recommended. Keep a safe environment when soldering.
+* Flush Cutter
+* Breadboard (or something similar) to hold the controler and the legs in place for soldering.
+* Electronic Heat resitant tape
+  * Painter tape will do as well :P
+
 ## 1. Preparing PCB and Plate
 
 Using Acrylic ink pen, paint the outer border of the plate and the PCB.
@@ -33,7 +44,21 @@ Keep in mind that the PCB is bare from below, so maybe better to solder the diod
 
 Please also take special care in the orientation of the soldered diodes, the 4 thumb keys have them reversed compared to the rest of the keys.
 
+### 2.1 Trough Hole diodes
+
 If using trough hole diodes, use a flush cutter to cut the excess leads.
+
+### 2.2 SMD diodes
+
+...
+
+## 3. Soldering the Controller
+
+Using a BreadBoard (or similar) solder the cut legs on the controller (need to show pictures on how to do this)
+
+Once all controller pins have soldered legs, put it on top of the pcb with the soldered diode leds inside the pcb controller holes (flush over its surface). Use tape to hold it in place.
+
+Turn the PCB upside down and cut the legs with the flush cutter, the solder it in place and remove the tape.
 
 ...
 
