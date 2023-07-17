@@ -21,7 +21,6 @@ _(Under construction)_
 
 ## Required Tools
 
-
 * Soldering Iron + Solder
   * Optionally flux if soldering SMD diodes.
   * Solder pad and some fan and ventilation is recommended. Keep a safe environment when soldering.
@@ -46,7 +45,7 @@ Please also take special care in the orientation of the soldered diodes, the 4 t
 
 ### 2.1 Trough Hole diodes
 
-If using trough hole diodes, use a flush cutter to cut the excess leads.
+If using trough hole diodes, use a flush cutter to cut the excess leads. Keep the cutted dioded legs, as they can be used as pins to solder the controller.
 
 ### 2.2 SMD diodes
 
@@ -54,7 +53,7 @@ If using trough hole diodes, use a flush cutter to cut the excess leads.
 
 ## 3. Soldering the Controller
 
-Using a BreadBoard (or similar) solder the cut legs on the controller (need to show pictures on how to do this)
+Using a BreadBoard (or similar) solder the diodes cutted legs on the controller (need to show pictures on how to do this), if using SMD diodes solder pins must be used.
 
 Once all controller pins have soldered legs, put it on top of the pcb with the soldered diode leds inside the pcb controller holes (flush over its surface). Use tape to hold it in place.
 
