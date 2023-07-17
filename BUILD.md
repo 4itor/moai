@@ -53,7 +53,7 @@ If using trough hole diodes, use a flush cutter to cut the excess leads. Keep th
 
 ## 3. Soldering the Controller
 
-Using a BreadBoard (or similar) solder the diodes cutted legs on the controller (need to show pictures on how to do this), if using SMD diodes solder pins must be used.
+Using a BreadBoard (or similar) solder the diodes's cutted legs on the controller (need to show pictures on how to do this), if using SMD diodes solder pins must be used.
 
 Once all controller pins have soldered legs, put it on top of the pcb with the soldered diode leds inside the pcb controller holes (flush over its surface). Use tape to hold it in place.
 
