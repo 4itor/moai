@@ -44,4 +44,4 @@ See [build notes](BUILD.md)
 
 ## Other Channels
 
-* [Discord(https://discord.com/channels/714176584269168732/1127694421861871636)
+* [Discord](https://discord.com/channels/714176584269168732/1127694421861871636)
