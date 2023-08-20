@@ -26,7 +26,7 @@ Moais (模合, Mo-ai) are social support groups that form in order to provide va
 
 Moai means "meeting for a common purpose" in Japanese and originated from the social support groups in Okinawa, Japan.
 
-Source: <https://en.wikipedia.org/wiki/Moai_(social_support_groups)>
+Source: [Wikipedia](https://en.wikipedia.org/wiki/Moai_(social_support_groups))
 
 ## Design
 
